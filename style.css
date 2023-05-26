@@ -1,0 +1,252 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+.hotspot-image {
+  width: 100%;
+}
+.hotspot-image .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hotspot-image .container .img-box {
+  width: 60%;
+  position: relative;
+}
+.hotspot-image .container .img-box .main-img {
+  overflow: hidden;
+  width: 100%;
+}
+input {
+  display: none;
+}
+p {
+  margin: 0;
+}
+.button {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #a50034;
+  display: block;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: fadein 0.5s;
+  animation: pulse 1.5s infinite;
+}
+.hotspot-image .container .content {
+  background: white;
+  padding: 10px 15px;
+  text-align: center;
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 2px -2px rgba(211, 47, 47, 0);
+  position: absolute;
+  top: 31%;
+  right: 22%;
+  width: 50%;
+}
+.hotspot-image .container .content .flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cross {
+  font-weight: bold;
+}
+.cross i {
+  font-size: 24px;
+  color: #a50034;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 50%;
+}
+.cross:hover i {
+  color: #fff;
+  background-color: #a50034;
+}
+#b1 {
+  position: absolute;
+  left: 100px;
+  top: 39px;
+}
+#b2 {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+#b3 {
+  position: absolute;
+  left: 39%;
+  top: 50%;
+}
+#b4 {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+}
+#b5 {
+  position: absolute;
+  left: 15%;
+  top: 55%;
+}
+#b6 {
+  position: absolute;
+  left: 20%;
+  top: 80%;
+}
+#b7 {
+  position: absolute;
+  left: 32%;
+  top: 77%;
+}
+#b8 {
+  position: absolute;
+  right: 27%;
+  top: 25%;
+}
+#b9 {
+  position: absolute;
+  right: 12%;
+  top: 32%;
+}
+#b10 {
+  position: absolute;
+  right: 16%;
+  top: 66%;
+}
+#b11 {
+  position: absolute;
+  right: 23%;
+  top: 66%;
+}
+#b12 {
+  position: absolute;
+  right: 7%;
+  top: 65%;
+}
+#input1:checked ~ #content1,
+#input2:checked ~ #content2,
+#input3:checked ~ #content3,
+#input4:checked ~ #content4,
+#input5:checked ~ #content5,
+#input6:checked ~ #content6,
+#input7:checked ~ #content7,
+#input8:checked ~ #content8,
+#input9:checked ~ #content9,
+#input10:checked ~ #content10,
+#input11:checked ~ #content11,
+#input12:checked ~ #content12 {
+  display: block !important;
+  animation: fadein 0.5s;
+}
+input:checked ~ label .button {
+  display: none !important;
+  animation: fadeout 0.5s;
+}
+.button:hover {
+  color: #a50034;
+  background: white;
+}
+.hotspot-image .container .content h1 {
+  color: #a50034;
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.hotspot-image .container .content img {
+  width: 150px;
+}
+.hotspot-image .container .content p {
+  color: #003594;
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+.hotspot-image .container .content .cta {
+  display: inline-block;
+  background: #a50034;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.hotspot-image .container .content .cta:hover {
+  box-shadow: 0 0 0 6px rgba(211, 46, 46, 0.4);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0px rgba(211, 47, 47);
+  }
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .hotspot-image .container .content {
+    background-color: #a50034;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    padding-bottom: 60px;
+  }
+  .hotspot-image .container .content h1 {
+    color: #fff;
+  }
+  .cross i {
+    color: #fff;
+  }
+  .cross:hover i {
+    background-color: #fff;
+    color: #a50034;
+  }
+  .hotspot-image .container .content .cta {
+    background-color: #fff;
+    color: #a50034;
+  }
+  .hotspot-image .container .content .cta:hover {
+    box-shadow: 0 0 0 6px rgba(213, 161, 161, 0.4);
+  }
+}
+/* @media screen and (max-width: 745px) {
+  .hotspot-image .container .content img {
+    display: none;
+  }
+}
+@media screen and (max-width: 635px) {
+  .hotspot-image .container .content h1 {
+    font-size: 18px;
+  }
+  .hotspot-image .container .content p {
+    font-size: 14px;
+  }
+} */
